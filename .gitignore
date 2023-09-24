@@ -161,3 +161,5 @@ cython_debug/
 #.idea/
 
 !/.gitignore
+/resources/credentials.yml
+/src/product_update/data.csv
