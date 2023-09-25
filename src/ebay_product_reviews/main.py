@@ -1,8 +1,8 @@
 # This is a sample Python script.
 from src.common.models.ebay_feedback_output import EbayFeedbackOutput
 from src.common.utilities.csv import output_shopify_products_to_csv, output_ebay_feedback_to_csv
-from src.ebay.ebay_api_wrapper import EbayApiWrapper
-from src.shopify.shopify_api_wrapper import ShopifyApiWrapper
+from src.common.ebay import EbayApiWrapper
+from src.common.shopify import ShopifyApiWrapper
 
 
 def build_shopify_product_csv():
