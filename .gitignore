@@ -162,4 +162,4 @@ cython_debug/
 
 !/.gitignore
 /resources/credentials.yml
-/src/product_update/data.csv
+/src/ebay_product_reviews/data.csv
