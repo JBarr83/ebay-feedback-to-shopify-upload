@@ -31,10 +31,11 @@ class ShopifyApiWrapper:
         master_product_list = create_product_list(products)
 
         # If products have another page of results, retrieve and add to the master list until there are no more pages
-        next_page: bool = products.has_next_page()
-        while next_page:
+        has_next_page: bool = products.has_next_page()
+        while has_next_page:
+            print('Retrieving next page of Shopify products')
             products: PaginatedCollection[Product] = products.next_page()
             master_product_list = [*master_product_list, *create_product_list(products)]
-            next_page = products.has_next_page()
+            has_next_page = products.has_next_page()
 
         return master_product_list

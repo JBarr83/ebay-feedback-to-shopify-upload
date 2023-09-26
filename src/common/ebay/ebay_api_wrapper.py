@@ -33,6 +33,7 @@ class EbayApiWrapper:
                 print('Total Pages: ' + str(feedback_total_pages))
                 for x in range(2, feedback_total_pages + 1):
                     feedback_query_data['Pagination']['PageNumber'] = x
+                    print('Retrieving eBay feedback page ' + str(x))
                     response = self.trading_api.execute('GetFeedback', feedback_query_data)
                     if response.reply.Ack == 'Success':
                         master_feedback_details = [*master_feedback_details,
