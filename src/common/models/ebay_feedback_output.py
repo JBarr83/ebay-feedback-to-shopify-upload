@@ -15,6 +15,8 @@ class EbayFeedbackOutput:
         self.comment_text = get_api_value(ebay_feedback, 'CommentText')
         self.comment_user = get_api_value(ebay_feedback, 'CommentingUser')
         self.feedback_star_rating = get_api_value(ebay_feedback, 'FeedbackRatingStar')
+        self.shopify_product_id = ''
+        self.shopify_rating = 5
 
         comment_date = get_api_value(ebay_feedback, 'CommentTime')
 
