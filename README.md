@@ -1,7 +1,12 @@
 # ebay-feedback-to-shopify-upload
 
 ## Installation
-Using pip run the following command 
+
+To create your virtual environment
+```bash
+python -m venv venv
+```
+When activated use pip to install the requirements 
 ```bash
 pip install -r requirements.txt
 ```
